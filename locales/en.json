@@ -1,0 +1,10 @@
+{
+  "pair": {
+    "enter_password": {
+      "title": "Enter Password",
+      "password": "Password",
+      "loading": "Verifying password...",
+      "submit": "Verify Password"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "actions": [
+    {
+      "id": "cmd_loadStartUrl",
+      "title": {
+        "en": "Load Start URL"
+      }
+    },
+    {
+      "id": "cmd_loadUrl",
+      "title": {
+        "en": "Load URL"
+      },
+      "titleFormatted": {
+        "en": "Load [[url]]"
+      },
+      "args": [
+        {
+          "name": "url",
+          "type": "text",
+          "placeholder": {
+            "en": "Enter URL"
+          }
+        }
+      ]
+    }
+  ]
+}

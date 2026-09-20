@@ -1,0 +1,49 @@
+{
+  "name": {
+    "en": "Fully Kiosk Browser"
+  },
+  "class": "other",
+  "capabilities": [
+    "onoff"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "discovery": "fully",
+  "pair": [
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "enter_password"
+      },
+      "options": {
+        "singular": true
+      }
+    },
+    {
+      "id": "enter_password"
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "settings": [
+    {
+      "id": "password",
+      "type": "password",
+      "label": {
+        "en": "Password"
+      }
+    }
+  ]
+}
