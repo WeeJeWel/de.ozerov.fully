@@ -126,4 +126,115 @@ module.exports = class FullyKioskBrowserDevice extends Homey.Device {
     });
   }
 
+  async cmd_refreshTab() {
+    await this.cmd({ cmd: 'refreshTab' });
+  }
+
+  async cmd_clearCache() {
+    await this.cmd({ cmd: 'clearCache' });
+  }
+
+  async cmd_startScreensaver() {
+    await this.cmd({ cmd: 'startScreensaver' });
+  }
+
+  async cmd_stopScreensaver() {
+    await this.cmd({ cmd: 'stopScreensaver' });
+  }
+
+  async cmd_triggerMotion() {
+    await this.cmd({ cmd: 'triggerMotion' });
+  }
+
+  async cmd_lockKiosk() {
+    await this.cmd({ cmd: 'lockKiosk' });
+  }
+
+  async cmd_unlockKiosk() {
+    await this.cmd({ cmd: 'unlockKiosk' });
+  }
+
+  async cmd_toForeground() {
+    await this.cmd({ cmd: 'toForeground' });
+  }
+
+  async cmd_toBackground() {
+    await this.cmd({ cmd: 'toBackground' });
+  }
+
+  async cmd_startApplication({ package: packageName }) {
+    await this.cmd({
+      cmd: 'startApplication',
+      params: { package: packageName },
+    });
+  }
+
+  async cmd_startIntent({ url }) {
+    await this.cmd({
+      cmd: 'startIntent',
+      params: { url },
+    });
+  }
+
+  async cmd_setOverlayMessage({ text }) {
+    await this.cmd({
+      cmd: 'setOverlayMessage',
+      params: { text },
+    });
+  }
+
+  async cmd_textToSpeech({ text }) {
+    await this.cmd({
+      cmd: 'textToSpeech',
+      params: { text },
+    });
+  }
+
+  async cmd_stopTextToSpeech() {
+    await this.cmd({ cmd: 'stopTextToSpeech' });
+  }
+
+  async cmd_setAudioVolume({ level, stream }) {
+    await this.cmd({
+      cmd: 'setAudioVolume',
+      params: { level, stream },
+    });
+  }
+
+  async cmd_playSound({ url, loop, stream }) {
+    await this.cmd({
+      cmd: 'playSound',
+      params: { url, loop, stream },
+    });
+  }
+
+  async cmd_stopSound() {
+    await this.cmd({ cmd: 'stopSound' });
+  }
+
+  async cmd_playVideo({ url, loop, showControls, exitOnTouch, exitOnCompletion }) {
+    await this.cmd({
+      cmd: 'playVideo',
+      params: { url, loop, showControls, exitOnTouch, exitOnCompletion },
+    });
+  }
+
+  async cmd_stopVideo() {
+    await this.cmd({ cmd: 'stopVideo' });
+  }
+
+  async cmd_setBooleanSetting({ key, value }) {
+    await this.cmd({
+      cmd: 'setBooleanSetting',
+      params: { key, value },
+    });
+  }
+
+  async cmd_setStringSetting({ key, value }) {
+    await this.cmd({
+      cmd: 'setStringSetting',
+      params: { key, value },
+    });
+  }
+
 };

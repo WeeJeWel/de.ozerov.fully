@@ -14,6 +14,94 @@ module.exports = class FullyKioskBrowserDriver extends Homey.Driver {
     this.homey.flow.getActionCard('cmd_loadUrl').registerRunListener(async ({ device, url }) => {
       await device.cmd_loadUrl({ url });
     });
+
+    this.homey.flow.getActionCard('cmd_refreshTab').registerRunListener(async ({ device }) => {
+      await device.cmd_refreshTab();
+    });
+
+    this.homey.flow.getActionCard('cmd_clearCache').registerRunListener(async ({ device }) => {
+      await device.cmd_clearCache();
+    });
+
+    this.homey.flow.getActionCard('cmd_startScreensaver').registerRunListener(async ({ device }) => {
+      await device.cmd_startScreensaver();
+    });
+
+    this.homey.flow.getActionCard('cmd_stopScreensaver').registerRunListener(async ({ device }) => {
+      await device.cmd_stopScreensaver();
+    });
+
+    this.homey.flow.getActionCard('cmd_triggerMotion').registerRunListener(async ({ device }) => {
+      await device.cmd_triggerMotion();
+    });
+
+    this.homey.flow.getActionCard('cmd_lockKiosk').registerRunListener(async ({ device }) => {
+      await device.cmd_lockKiosk();
+    });
+
+    this.homey.flow.getActionCard('cmd_unlockKiosk').registerRunListener(async ({ device }) => {
+      await device.cmd_unlockKiosk();
+    });
+
+    this.homey.flow.getActionCard('cmd_toForeground').registerRunListener(async ({ device }) => {
+      await device.cmd_toForeground();
+    });
+
+    this.homey.flow.getActionCard('cmd_toBackground').registerRunListener(async ({ device }) => {
+      await device.cmd_toBackground();
+    });
+
+    this.homey.flow.getActionCard('cmd_restartApp').registerRunListener(async ({ device }) => {
+      await device.cmd_restartApp();
+    });
+
+    this.homey.flow.getActionCard('cmd_startApplication').registerRunListener(async ({ device, package: packageName }) => {
+      await device.cmd_startApplication({ package: packageName });
+    });
+
+    this.homey.flow.getActionCard('cmd_startIntent').registerRunListener(async ({ device, url }) => {
+      await device.cmd_startIntent({ url });
+    });
+
+    this.homey.flow.getActionCard('cmd_setOverlayMessage').registerRunListener(async ({ device, text }) => {
+      await device.cmd_setOverlayMessage({ text });
+    });
+
+    this.homey.flow.getActionCard('cmd_textToSpeech').registerRunListener(async ({ device, text }) => {
+      await device.cmd_textToSpeech({ text });
+    });
+
+    this.homey.flow.getActionCard('cmd_stopTextToSpeech').registerRunListener(async ({ device }) => {
+      await device.cmd_stopTextToSpeech();
+    });
+
+    this.homey.flow.getActionCard('cmd_setAudioVolume').registerRunListener(async ({ device, level, stream }) => {
+      await device.cmd_setAudioVolume({ level, stream });
+    });
+
+    this.homey.flow.getActionCard('cmd_playSound').registerRunListener(async ({ device, url, loop, stream }) => {
+      await device.cmd_playSound({ url, loop, stream });
+    });
+
+    this.homey.flow.getActionCard('cmd_stopSound').registerRunListener(async ({ device }) => {
+      await device.cmd_stopSound();
+    });
+
+    this.homey.flow.getActionCard('cmd_playVideo').registerRunListener(async ({ device, url, loop, showControls, exitOnTouch, exitOnCompletion }) => {
+      await device.cmd_playVideo({ url, loop, showControls, exitOnTouch, exitOnCompletion });
+    });
+
+    this.homey.flow.getActionCard('cmd_stopVideo').registerRunListener(async ({ device }) => {
+      await device.cmd_stopVideo();
+    });
+
+    this.homey.flow.getActionCard('cmd_setBooleanSetting').registerRunListener(async ({ device, key, value }) => {
+      await device.cmd_setBooleanSetting({ key, value });
+    });
+
+    this.homey.flow.getActionCard('cmd_setStringSetting').registerRunListener(async ({ device, key, value }) => {
+      await device.cmd_setStringSetting({ key, value });
+    });
   }
 
   async onPair(session) {

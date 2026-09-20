@@ -69,6 +69,695 @@
             }
           }
         ]
+      },
+      {
+        "id": "cmd_refreshTab",
+        "title": {
+          "en": "Refresh Page"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_clearCache",
+        "title": {
+          "en": "Clear Cache"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_startScreensaver",
+        "title": {
+          "en": "Start Screensaver"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_stopScreensaver",
+        "title": {
+          "en": "Stop Screensaver"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_triggerMotion",
+        "title": {
+          "en": "Simulate Motion"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_lockKiosk",
+        "title": {
+          "en": "Lock Kiosk"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_unlockKiosk",
+        "title": {
+          "en": "Unlock Kiosk"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_toForeground",
+        "title": {
+          "en": "Bring Fully to Foreground"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_toBackground",
+        "title": {
+          "en": "Send Fully to Background"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_restartApp",
+        "title": {
+          "en": "Restart Fully"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_startApplication",
+        "title": {
+          "en": "Start Application"
+        },
+        "titleFormatted": {
+          "en": "Start application [[package]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          },
+          {
+            "name": "package",
+            "type": "text",
+            "title": {
+              "en": "Package Name"
+            },
+            "placeholder": {
+              "en": "com.example.app"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cmd_startIntent",
+        "title": {
+          "en": "Start Intent"
+        },
+        "titleFormatted": {
+          "en": "Start intent [[url]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          },
+          {
+            "name": "url",
+            "type": "text",
+            "title": {
+              "en": "Intent URL"
+            },
+            "placeholder": {
+              "en": "Enter intent URL"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cmd_setOverlayMessage",
+        "title": {
+          "en": "Set Overlay Message"
+        },
+        "titleFormatted": {
+          "en": "Set overlay message to [[text]]"
+        },
+        "hint": {
+          "en": "Leave the message empty to clear the overlay."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          },
+          {
+            "name": "text",
+            "type": "text",
+            "title": {
+              "en": "Message"
+            },
+            "placeholder": {
+              "en": "Enter message"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cmd_textToSpeech",
+        "title": {
+          "en": "Speak Text"
+        },
+        "titleFormatted": {
+          "en": "Say [[text]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          },
+          {
+            "name": "text",
+            "type": "text",
+            "title": {
+              "en": "Text"
+            },
+            "placeholder": {
+              "en": "Enter text"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cmd_stopTextToSpeech",
+        "title": {
+          "en": "Stop Speaking"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_setAudioVolume",
+        "title": {
+          "en": "Set Audio Volume"
+        },
+        "titleFormatted": {
+          "en": "Set [[stream]] volume to [[level]]%"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          },
+          {
+            "name": "level",
+            "type": "number",
+            "title": {
+              "en": "Volume"
+            },
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "units": {
+              "en": "%"
+            }
+          },
+          {
+            "name": "stream",
+            "type": "dropdown",
+            "title": {
+              "en": "Audio Stream"
+            },
+            "values": [
+              {
+                "id": "3",
+                "label": {
+                  "en": "Music"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Alarm"
+                }
+              },
+              {
+                "id": "5",
+                "label": {
+                  "en": "Notification"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Ring"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "System"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Voice Call"
+                }
+              },
+              {
+                "id": "6",
+                "label": {
+                  "en": "Bluetooth"
+                }
+              },
+              {
+                "id": "8",
+                "label": {
+                  "en": "DTMF"
+                }
+              },
+              {
+                "id": "9",
+                "label": {
+                  "en": "Text to Speech"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Accessibility"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cmd_playSound",
+        "title": {
+          "en": "Play Sound"
+        },
+        "titleFormatted": {
+          "en": "Play sound [[url]] with loop [[loop]] on [[stream]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          },
+          {
+            "name": "url",
+            "type": "text",
+            "title": {
+              "en": "URL"
+            },
+            "placeholder": {
+              "en": "Enter sound URL"
+            }
+          },
+          {
+            "name": "loop",
+            "type": "dropdown",
+            "title": {
+              "en": "Loop"
+            },
+            "values": [
+              {
+                "id": "false",
+                "label": {
+                  "en": "Off"
+                }
+              },
+              {
+                "id": "true",
+                "label": {
+                  "en": "On"
+                }
+              }
+            ]
+          },
+          {
+            "name": "stream",
+            "type": "dropdown",
+            "title": {
+              "en": "Audio Stream"
+            },
+            "values": [
+              {
+                "id": "3",
+                "label": {
+                  "en": "Music"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Alarm"
+                }
+              },
+              {
+                "id": "5",
+                "label": {
+                  "en": "Notification"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Ring"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "System"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Voice Call"
+                }
+              },
+              {
+                "id": "6",
+                "label": {
+                  "en": "Bluetooth"
+                }
+              },
+              {
+                "id": "8",
+                "label": {
+                  "en": "DTMF"
+                }
+              },
+              {
+                "id": "9",
+                "label": {
+                  "en": "Text to Speech"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Accessibility"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cmd_stopSound",
+        "title": {
+          "en": "Stop Sound"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_playVideo",
+        "title": {
+          "en": "Play Video"
+        },
+        "titleFormatted": {
+          "en": "Play video [[url]] with loop [[loop]], controls [[showControls]], exit on touch [[exitOnTouch]] and exit on completion [[exitOnCompletion]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          },
+          {
+            "name": "url",
+            "type": "text",
+            "title": {
+              "en": "URL"
+            },
+            "placeholder": {
+              "en": "Enter video URL"
+            }
+          },
+          {
+            "name": "loop",
+            "type": "dropdown",
+            "title": {
+              "en": "Loop"
+            },
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "On"
+                }
+              }
+            ]
+          },
+          {
+            "name": "showControls",
+            "type": "dropdown",
+            "title": {
+              "en": "Show Controls"
+            },
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off"
+                }
+              }
+            ]
+          },
+          {
+            "name": "exitOnTouch",
+            "type": "dropdown",
+            "title": {
+              "en": "Exit on Touch"
+            },
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off"
+                }
+              }
+            ]
+          },
+          {
+            "name": "exitOnCompletion",
+            "type": "dropdown",
+            "title": {
+              "en": "Exit on Completion"
+            },
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cmd_stopVideo",
+        "title": {
+          "en": "Stop Video"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          }
+        ]
+      },
+      {
+        "id": "cmd_setBooleanSetting",
+        "title": {
+          "en": "Set Boolean Setting"
+        },
+        "titleFormatted": {
+          "en": "Set boolean setting [[key]] to [[value]]"
+        },
+        "hint": {
+          "en": "Find setting keys in Fully Remote Admin. Changes apply immediately."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          },
+          {
+            "name": "key",
+            "type": "text",
+            "title": {
+              "en": "Setting Key"
+            },
+            "placeholder": {
+              "en": "Enter setting key"
+            }
+          },
+          {
+            "name": "value",
+            "type": "dropdown",
+            "title": {
+              "en": "Value"
+            },
+            "values": [
+              {
+                "id": "true",
+                "label": {
+                  "en": "True"
+                }
+              },
+              {
+                "id": "false",
+                "label": {
+                  "en": "False"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cmd_setStringSetting",
+        "title": {
+          "en": "Set String Setting"
+        },
+        "titleFormatted": {
+          "en": "Set string setting [[key]] to [[value]]"
+        },
+        "hint": {
+          "en": "Find setting keys in Fully Remote Admin. Changes apply immediately."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fully-kiosk-browser"
+          },
+          {
+            "name": "key",
+            "type": "text",
+            "title": {
+              "en": "Setting Key"
+            },
+            "placeholder": {
+              "en": "Enter setting key"
+            }
+          },
+          {
+            "name": "value",
+            "type": "text",
+            "title": {
+              "en": "Value"
+            },
+            "placeholder": {
+              "en": "Enter value"
+            }
+          }
+        ]
       }
     ]
   },
