@@ -17,6 +17,7 @@
   "category": [
     "tools"
   ],
+  "support": "mailto:emile@athom.nl",
   "brandColor": "#2A01E9",
   "permissions": [],
   "images": {
@@ -60,6 +61,9 @@
           {
             "name": "url",
             "type": "text",
+            "title": {
+              "en": "URL"
+            },
             "placeholder": {
               "en": "Enter URL"
             }

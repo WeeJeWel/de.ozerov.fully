@@ -18,6 +18,9 @@
         {
           "name": "url",
           "type": "text",
+          "title": {
+            "en": "URL"
+          },
           "placeholder": {
             "en": "Enter URL"
           }
