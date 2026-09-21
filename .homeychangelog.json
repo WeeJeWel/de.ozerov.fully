@@ -7,5 +7,8 @@
   },
   "1.1.0": {
     "en": "Added more Flow Cards."
+  },
+  "1.2.0": {
+    "en": "Added instructions before pairing to enable mDNS."
   }
 }
