@@ -55,7 +55,19 @@ module.exports = class FullyKioskBrowserDevice extends Homey.Device {
       const deviceInfo = await this.cmd_getDeviceInfo();
       this.log('Device Info:', JSON.stringify(deviceInfo));
 
+      // On/Off
       await this.setCapabilityValue('onoff', deviceInfo.screenOn === true);
+
+      // Battery
+      if (typeof deviceInfo.batteryLevel === 'number') {
+        if (!this.hasCapability('measure_battery')) {
+          await this.addCapability('measure_battery');
+        }
+
+        await this.setCapabilityValue('measure_battery', deviceInfo.batteryLevel);
+      }
+
+      // Available
       await this.setAvailable();
     }).catch(err => {
       this.error(`Error Polling: ${err.message}`);
